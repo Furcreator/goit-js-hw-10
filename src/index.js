@@ -10,8 +10,14 @@ const info = document.querySelector('#country-info');
 
 searchInput.addEventListener('input', debounce(onSearch, DEBOUNCE_DELAY));
 
-function onSearch(searchInput) {
-    let inputText = searchInput.target.value.trim();
+function onSearch(e) {
+    let inputText = e.target.value.trim();
     console.log(inputText);
     fetchCountries(inputText)
+    .then(countryArray => {
+        return countryArray;
+      })
+      .catch(error => {
+        console.log(error);
+      });
 }

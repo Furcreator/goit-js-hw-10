@@ -11,12 +11,6 @@ function fetchCountries(name) {
       }
       return response.json();
     })
-    .then(countryArray => {
-      return countryArray;
-    })
-    .catch(error => {
-      console.log(error);
-    });
 }
 
 
