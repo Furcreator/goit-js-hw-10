@@ -18,3 +18,40 @@ body {
   max-width: 320px;
   margin-bottom: 16px;
 }
+
+.country-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+
+.list {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  margin-right: 15px;
+}
+.l-flag {
+  height: 40px;
+  width: 50px;
+  margin-right: 15px;
+}
+.l-title {
+  font-size: 20px;
+  margin: 0;
+}
+
+
+
+
+.i-flag {
+  width: 80px;
+  height: 65px;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
