@@ -26,6 +26,7 @@ function onSearch(searchInput) {
         showAllMessage(countries);
     })
 }
+
 function showAllMessage(countries) {
     if (countries.length === 0){
         showErrorMessage()
@@ -69,7 +70,6 @@ function showCountryInfo({ name: { official }, capital, population, flags: { png
 }
 
 function showCountriesList(countries) {
-    console.log(countries);
     let listItems = countries.map(country => {
         const { name: { official }, flags: { png, alt } } = country;
         return `<li class = "list">
